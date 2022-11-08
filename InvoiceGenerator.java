@@ -18,4 +18,9 @@ public class InvoiceGenerator {
         }
         return totalFare;
     }
+    public InvoiceSummary getInvoiceSummary(Ride[] rides) {
+        double totalFare = calculateFare(rides);
+        int numOfRides = rides.length;
+        return new InvoiceSummary(numOfRides, totalFare);
+    }
 }

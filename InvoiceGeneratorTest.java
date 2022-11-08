@@ -1,13 +1,16 @@
 package org.example;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class InvoiceGeneratorTest {
     InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
 
-
+    @Before
+    public void init() {
+        invoiceGenerator = new InvoiceGenerator();
+    }
     @Test
     public void givenDistanceAndTime_ShouldReturnTotalFare() {
         double distance = 1.0;
