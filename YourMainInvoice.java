@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class YourInvoice {
+public class YourMainInvoice {
     public static void main(String[] args) {
         InvoiceGenerator ig = new InvoiceGenerator();
         Scanner sc = new Scanner(System.in);
@@ -10,6 +10,6 @@ public class YourInvoice {
         double distance = sc.nextInt();
         System.out.println("Enter the Time in hour");
         int time = sc.nextInt();
-        System.out.println(ig.calculateFare(distance,time));
+        System.out.println(ig.calculateFare(distance, time));
     }
 }
